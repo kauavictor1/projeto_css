@@ -1,0 +1,55 @@
+
+
+
+.central {
+background-color: #ffffff;
+border-radius: 5px;
+width: 399px;
+height: 90px;
+display: flex;
+flex-direction: column;
+text-align: left;
+    }
+    p + p {
+
+margin-top: 0;
+
+
+    }
+
+    .central:hover {
+        scale: 1.01;
+    }
+
+
+
+
+    
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
