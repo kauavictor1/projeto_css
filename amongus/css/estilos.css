@@ -1,0 +1,63 @@
+:root{
+/* CSS HEX */
+--oxford-blue: #000022ff;
+--black: #000001ff;
+--oxford-blue-2: #050827ff;
+--jasmine: #f1d272ff;
+--rich-black: #000019ff;
+--chinese-violet: #78516cff;
+--gunmetal: #0f2227ff;
+--columbia-blue: #ccdbecff;
+--silver: #bfb8acff;
+--fulvous: #e18328ff;
+}
+
+@font-face {
+    font-family: king;
+    src: url("/font/machinery_script/MachineryScript_PERSONAL_USE_ONLY.otf");
+}
+body{
+
+    background: radial-gradient(var(--oxford-blue), var(--oxford-blue-2));
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+img{
+    
+    width: 200px;
+    border-radius: 50%;
+    border: spx solid var(--chinese-violet);
+}
+h1{
+    color: var(--black);
+}
+h2{
+    font-family: king;
+    color: var(--gunmetal);
+    margin: 0;
+}
+p{
+    color: var(--black);
+}
+.central{
+    width: 40%;
+    background: radial-gradient(var(--columbia-blue), var(--oxford-blue-2));
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 3px var(--columbia-blue);
+
+}
+hr{
+    width: 100%;
+    height: 20px;
+    background-color: var(--oxford-blue-2);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
