@@ -1,0 +1,74 @@
+:root {
+    /* CSS HEX */
+--lion: #c79e72ff;
+--vanilla: #f6eea6ff;
+--platinum: #e7e8e7ff;
+--french-gray: #cdc5c8ff;
+--cinereous: #928479ff;
+--davys-gray: #5a5d64ff;
+--eggplant: #533c4dff;
+--violet-blue: #4b55aeff;
+--bistre: #3a211aff;
+--umber: #67524aff;
+}
+
+@font-face{
+    font-family: ft;
+    src: url(/font/lathin_sandy/Lathin\ Sandy.otf);
+}
+h2{
+    font-family: ft;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background:radial-gradient(var(--platinum),var(--violet-blue));
+}
+img{
+    width: 200px;
+    border-radius: 50%;
+    
+}
+.central{
+    width: 40%;
+    background: var(--french-gray);
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 3px var(--bistre);
+}
+hr{
+    color: var(--french-gray);
+    width: 100%;
+    height: 20px;
+    background-color: var(--vanilla);
+    border: none;
+    /* border-radius: 10px; */
+}
+@media(max-width:1024px) and (min-width: 720px){
+    body{
+        background: var(--umber);
+    }
+    .central{
+        width: 60%;
+    }
+}
+
+/*movile reponsividade*/
+
+@media(max-width:720px){
+    body{
+        background: var(--platinum);
+    }
+
+
+    .central{
+        width: 70%;
+    }
+}
