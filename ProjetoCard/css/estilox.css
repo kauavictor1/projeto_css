@@ -1,0 +1,101 @@
+:root{
+    /* CSS HEX */
+--fairy-tale: #e7c5d2ff;
+--cyclamen: #ed729fff;
+--plum: #78446aff;
+--licorice: #250d11ff;
+--cordovan: #8f303eff;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(var(--cordovan),var(--cyclamen));
+}
+
+.central:hover{
+    height: 400px;
+
+}
+
+.central .img-box{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 0px;
+}
+.central .img-box img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+.central:hover .img-box{
+    top: -50px;
+    scale: 0.75;
+    transition: 0.5;
+    
+}
+
+
+.central{
+    width: 350px;
+    height: 300px;
+    background: radial-gradient(var(--fairy-tale), var(--licorice));
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 3px 3px var(--columbia-blue);
+    transition: 0.5;
+}
+.central .content{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100px;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5;
+}
+.central:hover .content{
+    top: 130px;
+    height: 250px;
+    display: flex;
+    
+}
+@media(max-width:1024px) and (min-width: 120px){
+body{
+    background: var(--cordovan);
+}
+.central{
+    width: 50%;
+    }
+}
+@media(max-width: 720px){
+body{
+    background: var(--licorice);
+}
+.central{
+    width: 60%;
+}
+
+}
