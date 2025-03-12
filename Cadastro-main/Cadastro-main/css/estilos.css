@@ -1,0 +1,263 @@
+:root {
+
+    --chrysler-blue: #2321daff;
+    --sunset: #efcc8eff;
+    --spanish-orange: #df6615ff;
+    --dim-gray: #676767ff;
+    --off-red-rgb: #f2110dff;
+    --rebecca-purple: #783b9eff;
+    --lavender-floral: #bd6ce0ff;
+    --baby-powder: #fcfdf7ff;
+    --kelly-green: #33b21cff;
+    --black: #000000ff;
+}
+
+
+* {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(var(--lavender-floral), var(--chrysler-blue));
+
+}
+
+.btn-default {
+
+
+
+    background-color: var(--chrysler-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--baby-powder);
+    cursor: pointer;
+    gap: 8px;
+    height: fit-content;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.9s ease;
+}
+
+.btn-default:hover {
+
+    background-color: var(--rebecca-purple);
+
+
+
+}
+
+#form_container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+    background: var(--baby-powder);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px var(--black);
+
+}
+
+#form_header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+#form_title {
+
+    font-weight: 500;
+    color: var(--black);
+    position: relative;
+
+}
+
+#form_title::after {
+
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    border-radius: 30px;
+    background: linear-gradient(var(--rebecca-purple), var(--chrysler-blue));
+    left: 0;
+    bottom: 0;
+}
+
+#form_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+#form_title {
+
+    font-weight: 500;
+    color: var(--black);
+    position: relative;
+
+}
+
+#form_title::after {
+
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    border-radius: 30px;
+    left: 0;
+    bottom: 0;
+
+}
+
+
+#form {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+
+
+}
+
+
+#input_container {
+
+    display: grid;
+    gap: 24px;
+
+}
+
+.radio-container {
+
+    grid-column: span 2;
+
+}
+
+.form-label {
+
+
+    font-size: 12px;
+    color: var(--black);
+    font-weight: 500;
+
+}
+
+.input-field {
+
+    display: flex;
+    align-items: center;
+    background-color: var(--baby-powder);
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+}
+
+.input-field i {
+
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    color: var(--dim-gray);
+
+
+}
+
+.form-control {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+
+}
+
+
+.input-field .password-icon:hover {
+
+    cursor: pointer;
+    color: var(--dim-gray);
+}
+
+.form-control:focus {
+
+    outline: none;
+
+}
+
+.input-box .input-field:focus-within {
+
+    outline: 2px solid var(--rebecca-purple);
+
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    color: #000;
+
+}
+
+
+
+#gender_inputs {
+
+    display: flex;
+    gap: 20px;
+
+}
+
+.radio-box {
+
+
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+
+}
+
+.form-control[type="radio"] {
+    accent-color: var(--rebecca-purple);
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    #form_container {
+
+        width: 100%;
+        min-height: 100vh;
+        padding: 32px;
+
+    }
+
+    #input_container {
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+
+    }
+
+}
